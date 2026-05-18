@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Fondouk - Travel Agency</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         HEADER
+         ======================================== -->
+    <header class="position-absolute top-0 start-0 w-100" style="z-index: 50;">
+        <!-- Promo Banner -->
+        <div class="promo-banner">
+            <div class="container d-flex align-items-center justify-content-center gap-2">
+                <span class="promo-star"><img src="assets/image/49cdbdf1-14f3-4779-83c2-97dc5971c871.svg" alt=""></span>
+                <p class="promo-text mb-0">It's time to travel, book now</p>
+                <span class="promo-star"><img src="assets/image/49cdbdf1-14f3-4779-83c2-97dc5971c871.svg" alt=""></span>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="main-nav" id="mainNav">
+            <div class="container d-flex align-items-center justify-content-between py-3">
+                <!-- Logo -->
+                <a href="#" class="navbar-brand">
+                    <img src="https://img1.wsimg.com/isteam/ip/1f910c6e-d510-4104-94e2-3a2f5042ddb6/Website%20Logo.png/:/rs=h:74,cg:true,m/qt=q:95"
+                        alt="Book Fondouk" class="nav-logo">
+                </a>
+
+
+                <!-- Mobile Menu Button -->
+                <button class="d-lg-none btn p-2 text-white border-0" id="menuToggle" aria-label="Menu">
+                    <i class="bi bi-list fs-4"></i>
+                </button>
+
+
+
+                <!-- Desktop Nav Links -->
+                <div class="d-none d-lg-flex align-items-center gap-4" id="desktopNav">
+                    <a href="#" class="nav-link-custom active">Home</a>
+                    <a href="#about-us" class="nav-link-custom">About Us</a>
+                    <a href="#services" class="nav-link-custom">Services</a>
+                    <a href="#contactus" class="nav-link-custom">Contact Us</a>
+                </div>
+
+                <!-- Utilities -->
+                <div class="d-flex align-items-center  gap-3 number-hid">
+                    <a href="tel:+971586712271" class="phone-link d-none d-md-block">+971586712271</a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="d-flex justify-content-end p-4">
+            <button class="btn text-white" id="menuClose" aria-label="Close menu">
+                <i class="bi bi-x-lg fs-3"></i>
+            </button>
+        </div>
+        <nav class="d-flex flex-column align-items-center gap-4 pt-5">
+            <a href="#" class="mobile-nav-link">Home</a>
+            <a href="#about-us" class="mobile-nav-link">About Us</a>
+            <a href="#services" class="mobile-nav-link">Services</a>
+            <a href="#contactus" class="mobile-nav-link">Contact Us</a>
+            <div class="pt-5 d-flex flex-column align-items-center gap-3">
+                <a href="tel:+971586712271" class="text-white fs-5 fw-bold text-decoration-none">+971586712271</a>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <!-- ========================================
+             HERO SECTION
+             ======================================== -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg"
+                style="background-image: url('./assets/image/josch13-airport-dusseldorf-197743_1280.jpg');">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-circle">
+                    <h1 class="hero-title">We do the<br>planning for<br>you</h1>
+                    <p class="hero-subtitle">Let's book the vacation of<br>your dreams!</p>
+                    <a href="#" class="hero-btn">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             ONLINE APPOINTMENTS SECTION
+             ======================================== -->
+        <section id="appointments" class="appointments-section">
+            <div id="about-us" class="container">
+                <!-- Title with lines -->
+                <div class="section-title-wrapper">
+                    <div class="section-line"></div>
+                    <h2 class="section-title-serif orange">Online Appointments</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="category-tabs" id="categoryTabs">
+                    <button class="category-tab active" data-category="All Services">All Services</button>
+                    <button class="category-tab" data-category="Hotel Booking">Hotel Booking</button>
+                    <button class="category-tab" data-category="Flight Tickets">Flight Tickets</button>
+                    <button class="category-tab" data-category="Honeymoon Packages">Honeymoon Packages</button>
+                    <button class="category-tab" data-category="MICE">MICE</button>
+                    <button class="category-tab" data-category="Transportation">Transportation</button>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="row g-4 servicesgrid" id="servicesGrid">
+                    <!-- Cards injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             OUR SCOPE OF SERVICES
+             ======================================== -->
+        <section id="services" class="scope-section">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <div class="section-line gray"></div>
+                    <h2 class="section-title-serif gold">Our Scope of Services</h2>
+                    <div class="section-line gray"></div>
+                </div>
+
+                <div class="row g-4 g-md-5">
+                    <!-- MICE -->
+                    <div class="col-12 col-lg-4 text-center">
+                        <div class="scope-img-wrapper">
+                            <img src="assets/image/rs=w_365_1.jpeg" alt="MICE" class="scope-img">
+                        </div>
+                        <h4 class="scope-title">MICE</h4>
+                        <p class="scope-desc">Whether you have a conference of a hundred or a thousand, Important
+                            meeting, Team building or Leisure event, we ensure an ideal experience for everyone. Our
+                            team arranges a comfortable commute and accommodation, as well as intimate spaces equipped
+                            with high-end technology.</p>
+                    </div>
+                    <!-- VIP Meet And Greet -->
+                    <div class="col-12 col-lg-4 text-center">
+                        <div class="scope-img-wrapper">
+                            <img src="assets/image/rs=w_365_2.jpeg" alt="VIP Meet And Greet" class="scope-img">
+                        </div>
+                        <h4 class="scope-title">VIP Meet And Greet</h4>
+                        <p class="scope-desc">From Airport VIP Lounge to Accommodation for your comfort.</p>
+                    </div>
+                    <!-- Transportation -->
+                    <div class="col-12 col-lg-4 text-center">
+                        <div class="scope-img-wrapper">
+                            <img src="assets/image/rs=w_710.jpeg" alt="Transportation" class="scope-img">
+                        </div>
+                        <h4 class="scope-title">Transportation</h4>
+                        <p class="scope-desc">Our fleet, newest model cars, buses, representable English-speaking
+                            drivers to ensure your safety and comfort.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             WHAT WE ALSO DO
+             ======================================== -->
+        <section id="offerings" class="offerings-section">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <div class="section-line orange-line"></div>
+                    <h2 class="section-title-serif dark">What we also do</h2>
+                    <div class="section-line orange-line"></div>
+                </div>
+
+                <div class="row g-0">
+                    <div class="col-12 col-md-4">
+                        <div class="offering-card" style="background-image: url('assets/image/rs=w_1920,m.jpeg');">
+                            <div class="offering-overlay"></div>
+                            <div class="offering-content">
+                                <h3 class="offering-title">Honeymoon Packages</h3>
+                                <p class="offering-desc">Say something interesting about your business here.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="offering-card" style="background-image: url('assets/image/rs=w_1920,m_4.jpeg');">
+                            <div class="offering-overlay"></div>
+                            <div class="offering-content">
+                                <h3 class="offering-title">Hotel Bookings</h3>
+                                <p class="offering-desc">What's something exciting your business offers? Say it here.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="offering-card" style="background-image: url('assets/image/rs=w_1920,m_2.jpeg');">
+                            <div class="offering-overlay"></div>
+                            <div class="offering-content">
+                                <h3 class="offering-title">Flight Tickets</h3>
+                                <p class="offering-desc">Give customers a reason to do business with you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             BUSINESS PARTNERS
+             ======================================== -->
+        <section id="partners" class="partners-section">
+            <div class="container-fluid px-0">
+                <div class="row g-0">
+                    <!-- Left Text -->
+                    <div class="col-12 col-lg-6 partners-text">
+                        <div class="partners-title-wrapper">
+                            <h2 class="section-title-serif orange mb-0">Business Partners</h2>
+                            <div class="section-line flex-grow-1"></div>
+                        </div>
+
+                        <div class="partners-items">
+                            <div class="partner-item">
+                                <h4>Saving time</h4>
+                                <p>Perfect organization is of particular importance, especially when it comes to
+                                    business trips. Whether you need individual assistance or organizational perfection:
+                                    our motivated and professional staff always find the best solution to suit you.</p>
+                            </div>
+                            <div class="partner-item">
+                                <h4>Reliable and comfortable travel</h4>
+                                <p>What's something exciting your business offers? Say it here. Enjoy the reliability
+                                    and comfort of a close-knit support and service network.</p>
+                            </div>
+                            <div class="partner-item">
+                                <h4>Saving money</h4>
+                                <p>You will also be positively surprised by our prices as we pass the preferential
+                                    conditions we enjoy with countless hotels, and car rental organizations straight on
+                                    to you. This way we can keep down your travel costs to an absolute minimum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Image -->
+                    <div class="col-12 col-lg-6 partners-image-col">
+                        <img src="assets/image/rs=w_1920,m_1.jpeg" alt="Travel planning" class="partners-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer>
+        <!-- Connect With Us -->
+        <section id="contactus" class="connect-section">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <div class="section-line"></div>
+                    <h2 class="section-title-serif orange">Connect With Us</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <img src="assets/image/fac.svg" alt="">
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <img src="assets/image/insta.svg" alt="">
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <img src="assets/image/link.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mailing List -->
+        <section class="mailing-section">
+            <img src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/8ad0b5d8-e916-4538-a256-6838ea490dd9-bookfondouk-com/assets/images/images_11.png"
+                alt="Background" class="mailing-bg-img">
+            <div class="mailing-overlay"></div>
+            <div class="mailing-content">
+                <h2 class="mailing-title">Join Our Mailing List</h2>
+                <p class="mailing-desc">Be the first to hear about upcoming trips, exciting destinations, and fun
+                    activities!</p>
+                <form class="mailing-form" id="mailingForm">
+                    <input type="email" placeholder="Email Address" class="mailing-input" required>
+                    <button type="submit" class="mailing-btn">Sign up</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Bottom Footer -->
+        <section class="footer-bottom">
+            <div class="container text-center">
+                <p class="footer-copyright">Copyright &copy; <span id="currentYear"></span> <span
+                        style="color: #FF7500; font-size: 17px;"><a href="https://iivtech.com/">iivtech</a></span></p>
+                <div class="footer-links">
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Payment Confirmation</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+                <div class="footer-divider"></div>
+                <p class="footer-partnership">Partnership with Intratour</p>
+            </div>
+        </section>
+    </footer>
+
+
+    <!-- ========================================
+         FLOATING CHAT BUTTON
+         ======================================== -->
+    <!-- <button class="chat-button" id="chatButton" aria-label="Chat with us">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        </svg>
+    </button> -->
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="assets/js/script.js"></script>
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+
+
+</body>
+
+</html>
