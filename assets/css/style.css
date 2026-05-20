@@ -1,6 +1,15 @@
 /* ========================================
+   Template License Header (MIT)
+   ----------------------------------------
+   Template originally created by Mohammed Sabry
+   Credit required: github.com/Mohammedsabry13
+   (c) [2026] [Mohammed Sabry]
+   ======================================== */
+
+/* ========================================
    ROOT VARIABLES & CUSTOM PROPERTIES
    ======================================== */
+
 :root {
     --primary-orange: #D55C00;
     --accent-orange: #FF7500;
@@ -109,9 +118,11 @@ img {
         height: 74px;
     }
 }
-.number-hid{
+
+.number-hid {
     display: none ! important;
 }
+
 .nav-link-custom {
     font-size: 14px;
     font-weight: 600;
@@ -1167,7 +1178,7 @@ img {
 }
 
 @media (min-width: 992px) {
-.number-hid{
-    display: block !important;
-}
+    .number-hid {
+        display: block !important;
+    }
 }

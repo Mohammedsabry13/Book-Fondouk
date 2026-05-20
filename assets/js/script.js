@@ -1,8 +1,14 @@
 /**
  * Book Fondouk - Main JavaScript
- * ================================
- * Unified JavaScript file for all interactions
+ * ================================================
+ * Template originally created by Mohammed Sabry
+ * Credit required: github.com/Mohammedsabry13
+ * License: MIT
+ *
+ * (c) [2026] [Mohammed Sabry]
+ * ================================================
  */
+
 
 document.addEventListener('DOMContentLoaded', function () {
 

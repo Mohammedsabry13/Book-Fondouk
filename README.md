@@ -1,5 +1,8 @@
 # Book Fondouk — Travel Agency Landing Page
 
+⚠️ This template was originally created by Mohammed Sabry credit is required: github.com/Mohammedsabry13
+
+
 A clean and elegant one-page corporate website for **Book Fondouk**, a UAE-based travel agency (in partnership with Intratour) offering complete travel planning services for individuals and businesses.
 
 ## 🛠️ Tech Stack
